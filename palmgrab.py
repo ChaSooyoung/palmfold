@@ -22,7 +22,7 @@ def palmgrab(inputdir, palmout, rdrpout) :
             if el != '-':
                 find = i
                 break
-        for i, el in enumerate(seqList[1][::1].split('\n')[-1]) :
+        for i, el in enumerate(seqList[1][::-1].split('\n')[-1]) :
             if el != '-' and el != ' ':
                 lind = i
                 break
